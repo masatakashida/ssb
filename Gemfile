@@ -62,3 +62,19 @@ gem 'jquery-rails'
 gem 'jquery-turbolinks'
 gem 'materialize-sass'
 gem 'material_icons'
+
+
+# Unicorn
+gem 'unicorn'
+gem 'unicorn-worker-killer'
+gem 'dalli'
+
+
+# capistrano
+group :development do
+  gem "capistrano", "~> 3.9"
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-bundler'
+  gem 'capistrano3-unicorn'
+end
