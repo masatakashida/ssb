@@ -5,9 +5,9 @@ worker_processes 2 # ワーカプロセス数
 working_directory "#{WORKING_DIR}"
 
 listen 8080
-#listen "#{WORKING_DIR}/tmp/sockets/unicorn.sock"
+listen "#{WORKING_DIR}/tmp/sockets/unicorn.sock"
 
-#pid    "tmp/pids/unicorn.pid"  # pidファイル
+pid    "tmp/pids/unicorn.pid"
 
 # 標準出力、標準エラー出力先
 stdout_path "log/unicorn.stdout.log"
