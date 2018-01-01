@@ -1,4 +1,4 @@
-set :deploy_to    ,'/home/deploy/ssh' # deploy先の設定
+set :deploy_to    ,'/home/deploy/ssb' # deploy先の設定
 # set :unicorn_pid  ,"#{shared_path}/tmp/pids/unicorn.pid" # unicorn pidの位置
 
 server '160.16.78.24', user: 'deploy', roles: %w{web app batch api db}

@@ -1,4 +1,4 @@
-WORKING_DIR = "/home/deploy/crayon/current"
+WORKING_DIR = "/home/deploy/ssb/current"
 
 worker_processes 2 # ワーカプロセス数
 working_directory "#{WORKING_DIR}"
