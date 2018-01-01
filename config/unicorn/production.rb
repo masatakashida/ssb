@@ -1,4 +1,5 @@
-WORKING_DIR = "/home/deploy/ssb/current"
+#WORKING_DIR = "/home/deploy/ssb/current"
+WORKING_DIR = "/home/deploy/ssb/ssb"
 
 worker_processes 2 # ワーカプロセス数
 working_directory "#{WORKING_DIR}"
