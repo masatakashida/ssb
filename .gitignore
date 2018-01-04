@@ -27,3 +27,6 @@
 config/database.yml
 ‘/vendor/bundle’
 ‘/vendor/bundle’
+
+# 追加
+db.html
