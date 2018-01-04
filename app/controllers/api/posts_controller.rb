@@ -38,4 +38,6 @@ class Api::PostsController < ApplicationController
     	  params.require(:post).permit(:book_name, :title, :story_1, :story_2, :story_3, :story_4)
     	end
 
+      # @post = Post.find(params[:id])
+
 end
