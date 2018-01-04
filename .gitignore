@@ -30,3 +30,4 @@ config/database.yml
 
 # 追加
 db.html
+api.html
