@@ -31,6 +31,15 @@ class Api::PostsController < ApplicationController
     @post = Post.find(params[:id])
   end
 
+  def destroy
+    @post = Post.find(params[:id])
+    if @post.destroy
+      render_200
+    else
+      render_error
+    end
+  end
+
 
     private
 
