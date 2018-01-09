@@ -6,7 +6,7 @@
       <li><router-link to="/contact">Contact</router-link></li>
       <li><router-link to="#">User</router-link></li>
     </ul>
-    <nav class="#6d4c41 brown darken-1">
+    <nav class="#">
       <div class="nav-wrapper container">
         <a href="/" class="brand-logo left">S-STORYBOOK</a>
         <ul class="right hide-on-med-and-down">
@@ -26,3 +26,9 @@
     </nav>
   </div>
 </template>
+
+<style scoped>
+nav {
+  background-color: #3b5f42;
+}
+</style>
