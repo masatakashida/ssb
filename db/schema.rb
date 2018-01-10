@@ -34,12 +34,11 @@ ActiveRecord::Schema.define(version: 20180110042635) do
   end
 
   create_table "posts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string "book_name", default: "", null: false
-    t.string "title", null: false
-    t.string "story_1"
-    t.string "story_2"
-    t.string "story_3"
-    t.string "story_4"
+    t.string "word", null: false
+    t.string "tag", null: false
+    t.text "thought", null: false
+    t.integer "user_id", null: false
+    t.integer "category_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
