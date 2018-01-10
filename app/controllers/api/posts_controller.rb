@@ -31,11 +31,22 @@ class Api::PostsController < ApplicationController
     @post = Post.find(params[:id])
   end
 
+  def destroy
+    @post = Post.find(params[:id])
+    if @post.destroy
+      render_200
+    else
+      render_error
+    end
+  end
+
 
     private
 
     	def post_params
     	  params.require(:post).permit(:book_name, :title, :story_1, :story_2, :story_3, :story_4)
     	end
+
+      # @post = Post.find(params[:id])
 
 end

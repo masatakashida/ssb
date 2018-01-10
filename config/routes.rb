@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
   # RailsApi ルーティング
   namespace :api, format: 'json' do
-  	resources :posts, only: [:index, :create, :update, :show]
+  	resources :posts, only: [:index, :create, :update, :show, :destroy]
   end
 
 end
