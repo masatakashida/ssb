@@ -1,5 +1,52 @@
 # DB Document
 
+```
+# 論理名称
+
+## フィールド
+
+- 物理名称, 型, オプション, 論理名称
+
+## インデックス
+
+- 対象フィールド
+```
+
+# ユーザー
+## フィールド
+- ID, id, integerm not null
+- メールアドレス, email, string, not null
+
+
+
+## インデックス
+- id
+
+
+# 感動したポスト
+
+## フィールド
+ID, id, integer, not null
+
+## インデックス
+# 
+
+# タグ
+## フィールド
+ID, id, integer, not null
+
+## インデックス
+# 
+
+# カテゴリー
+## フィールド
+ID, id, integer, not null
+
+## インデックス
+# 
+
+
+
 
 ### User
 | column     |  |
