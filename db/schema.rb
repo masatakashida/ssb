@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180110040717) do
+ActiveRecord::Schema.define(version: 20180110041609) do
 
   create_table "posts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "book_name", default: "", null: false
@@ -19,6 +19,13 @@ ActiveRecord::Schema.define(version: 20180110040717) do
     t.string "story_2"
     t.string "story_3"
     t.string "story_4"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "relationships", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer "follwer_id", null: false
+    t.integer "follwed_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
